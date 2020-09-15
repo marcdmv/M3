@@ -1,3 +1,5 @@
+package itacademy;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -35,6 +37,16 @@ public class Main {
         Arrays.sort(ciutats);
         for(int i = 0; i < ciutats.length; i++){
             System.out.println(ciutats[i]);
+        }
+
+        //FASE 3
+        String[] ArrayCiutatsModificades = new String[ciutats.length];
+        for(int i = 0; i < ciutats.length; i++){
+            ArrayCiutatsModificades[i] = ciutats[i].replace('a','4');
+        }
+        Arrays.sort(ArrayCiutatsModificades);
+        for(int i = 0; i < ArrayCiutatsModificades.length; i++){
+            System.out.println(ArrayCiutatsModificades[i]);
         }
     }
 }
